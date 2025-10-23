@@ -28,24 +28,31 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun ActivitasPertama(modifier: Modifier){
-    Column (modifier = Modifier.padding(top=100.dp)
-        .fillMaxSize(),
+fun ActivitasPertama(modifier: Modifier) {
+    Column(
+        modifier = Modifier.padding(top = 100.dp)
+            .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
-        Text(text = stringResource(id= R.string.prodi),
+    ) {
+        Text(
+            text = stringResource(id = R.string.prodi),
             fontSize = 40.sp,
-            fontWeight = FontWeight.Bold)
-        Text( text = stringResource(id= R.string.univ),
-            fontSize = 22.sp)
-        Spacer(modifier= Modifier.height(height = 25.dp))
-        Card (modifier = Modifier
-            .fillMaxWidth(fraction = 1f)
-            .padding(all = 15.dp),
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = stringResource(id = R.string.univ),
+            fontSize = 22.sp
+        )
+        Spacer(modifier = Modifier.height(height = 25.dp))
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 15.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
-            )){
-            Row (){
+            )
+        ) {
+            Row() {
                 val gambar = painterResource(id = R.drawable.logo)
                 Image(
                     painter = gambar,
@@ -53,7 +60,7 @@ fun ActivitasPertama(modifier: Modifier){
                     modifier = Modifier.size(size = 100.dp).padding(all = 5.dp)
                 )
                 Spacer(modifier = Modifier.width(width = 30.dp))
-                Column (){
+                Column() {
                     Text(
                         text = stringResource(id = R.string.nama),
                         fontSize = 30.sp,
@@ -70,18 +77,19 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
-        Spacer(modifier= Modifier.height(height = 150.dp))
+        Spacer(modifier = Modifier.height(height = 150.dp))
+        Card() {}
+
         Box(
             modifier = Modifier
                 .fillMaxSize()
-        ){
+        ) {
             Text(
-                text = stringResource(id=R.string.copy),
+                text = stringResource(id = R.string.copy),
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(bottom = 50.dp)
             )
         }
     }
-
 }
