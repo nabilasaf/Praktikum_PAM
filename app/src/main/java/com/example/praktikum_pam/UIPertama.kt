@@ -80,7 +80,21 @@ fun ActivitasPertama(modifier: Modifier){
                     modifier = Modifier.size(size = 100.dp).padding(all = 5.dp)
                 )
                 Spacer(modifier = Modifier.width(width = 30.dp))
-
+                Column (){
+                    Text(
+                        text = stringResource(id = R.string.nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Monospace,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 20.dp)
+                    )
+                    Text(
+                        text = stringResource(id = R.string.alamat),
+                        fontSize = 25.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
             }
         }
         Box(
