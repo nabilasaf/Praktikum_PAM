@@ -70,8 +70,14 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
-        Spacer(modifier= Modifier.height(height = 150.dp))
-        Card (){
+        Spacer(modifier= Modifier.height(height = 5.dp))
+        Card (modifier = Modifier
+            .fillMaxWidth(fraction = 1f)
+            .padding(all = 15.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue
+            )){
+
             Row (){
                 val gambar = painterResource(id = R.drawable.logo)
                 Image(
