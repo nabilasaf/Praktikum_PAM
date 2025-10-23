@@ -73,6 +73,12 @@ fun ActivitasPertama(modifier: Modifier){
         Spacer(modifier= Modifier.height(height = 150.dp))
         Card (){
             Row (){
+                val gambar = painterResource(id = R.drawable.logo)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(size = 100.dp).padding(all = 5.dp)
+                )
 
             }
         }
