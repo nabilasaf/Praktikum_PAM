@@ -82,4 +82,6 @@ fun ActivitasPertama(modifier: Modifier){
             )
         }
     }
+
+    Column () {}
 }
