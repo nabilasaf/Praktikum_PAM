@@ -87,5 +87,6 @@ fun ActivitasPertama(modifier: Modifier){
         horizontalAlignment = Alignment.CenterHorizontally)
     {
         Spacer(modifier= Modifier.height(height = 100.dp))
+        Card (){  }
     }
 }
