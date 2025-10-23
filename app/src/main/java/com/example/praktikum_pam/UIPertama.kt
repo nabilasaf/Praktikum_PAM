@@ -77,7 +77,6 @@ fun ActivitasPertama(modifier: Modifier){
             colors = CardDefaults.cardColors(
                 containerColor = Color.Blue
             )){
-
             Row (){
                 val gambar = painterResource(id = R.drawable.logo)
                 Image(
@@ -110,6 +109,8 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
+        Spacer(modifier= Modifier.height(height = 5.dp))
+
         Box(
             modifier = Modifier
                 .fillMaxSize()
